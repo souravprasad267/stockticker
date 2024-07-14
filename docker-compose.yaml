@@ -1,0 +1,30 @@
+version: "3.8"
+
+services:
+    stockticker:
+        container_name: stockticker
+        build: .
+        ports:
+            - "3000:3000"
+            - "3001:3001"
+        depends_on:
+            - mongo
+        networks:
+            - stockTickerNetwork
+
+    mongo:
+        container_name: mongo
+        image: mongo:latest
+        ports:
+            - "27017:27017"
+        volumes:
+            - mongo-data:/data/db
+        networks:
+            - stockTickerNetwork
+
+networks:
+    stockTickerNetwork:
+        name: stockTickerNetwork
+
+volumes:
+    mongo-data:

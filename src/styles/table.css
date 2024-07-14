@@ -1,0 +1,27 @@
+/* Table Style */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th,
+.table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    width: 50%;
+}
+
+.table th {
+    background-color: rgb(213, 215, 215);
+    color: black;
+}
+
+.table tr:nth-child(even) {
+    background-color: rgb(231, 230, 229);
+}
+
+.table tr:hover {
+    background-color: rgb(218, 202, 202);
+}

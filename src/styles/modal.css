@@ -1,0 +1,40 @@
+/* Modal Style */
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(244, 236, 230, 0.553);
+}
+
+.modal-content {
+    background-color: rgb(234, 241, 242);
+    margin: 15% auto;
+    padding: 0px 20px;
+    width: 35%;
+    box-shadow: 0 4px 8px 0 rgb(117, 71, 71), 0 6px 20px 0 rgb(118, 61, 63);
+}
+
+.close {
+    color: black;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Checkbox Style */
+.checkbox-group {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
