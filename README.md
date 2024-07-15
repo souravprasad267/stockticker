@@ -1,12 +1,13 @@
+
 ---
 
 # StockTicker
 
-StockTicker is a Next.js application that displays real-time prices of five most popular cryptocurrencies: Bitcoin, Ethereum, Tether, Solana and Dogecoin. The application updates prices every 10 seconds, fetching data from [`api.livecoinwatch.com`](https://www.livecoinwatch.com/tools/api) and storing it in a MongoDB database. It features a simple UI with a table for displaying cryptocurrency prices and a modal for selecting a specific cryptocurrency.
+StockTicker is a Next.js application that displays real time prices of five most popular cryptocurrencies: Bitcoin, Ethereum, Tether, Solana and Dogecoin. The application updates prices every 10 seconds, fetching data from [`api.livecoinwatch.com`](https://www.livecoinwatch.com/tools/api) and storing it in a MongoDB database. It features a simple UI with a table for displaying cryptocurrency prices and a modal for selecting a specific cryptocurrency.
 
 ## Features
 
-- Real-time price updates every 10 seconds
+- Real time price updates every 10 seconds
 
 - Supports Bitcoin, Ethereum, Tether, Solana and Dogecoin
 
@@ -42,7 +43,7 @@ docker compose up --build
 
 The frontend of the StockTicker application is built using Next.js providing a fast and responsive user interface. It leverages Redux for comprehensive state management across the application, ensuring that the UI remains consistent with the application's state. The main components of the frontend include:
 
-- **Price Display Table**: At the heart of the UI is a table that displays the real-time prices of the selected cryptocurrency. The table's first row serves as a header, showing the currently selected coin and a button to open the modal for coin selection. The second row contains column headers for "Timestamp" and "Price". The table then lists the most recent 20 prices fetched from the MongoDB database, updating in real-time every 10 seconds as new data is available. Timestamps are displayed in the local string format, and prices are shown in USD with two decimal precision.
+- **Price Display Table**: At the heart of the UI is a table that displays the real time prices of the selected cryptocurrency. The table's first row serves as a header, showing the currently selected coin and a button to open the modal for coin selection. The second row contains column headers for "Timestamp" and "Price". The table then lists the most recent 20 prices fetched from the MongoDB database, updating in real time every 10 seconds as new data is available. Timestamps are displayed in the local string format, and prices are shown in USD with two decimal precision.
 
 - **Coin Selection Modal**: A simple yet functional modal that allows user to change the cryptocurrency they wish to track. It contains a brief message prompting the user to select a coin and a dropdown list of available cryptocurrencies(Bitcoin, Ethereum, Tether, Solana, Dogecoin). The modal also features a close button(represented by a &times; symbol) that closes the modal upon clicking. Selecting a coin from the dropdown automatically updates the table with the selected coin's price data and closes the modal.
 
