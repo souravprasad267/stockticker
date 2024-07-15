@@ -52,7 +52,7 @@ const StockPage = () => {
                     </tr>
                     <tr>
                         <th>TIMESTAMP</th>
-                        <th>PRICE</th>
+                        <th>PRICE ($)</th>
                     </tr>
                 </thead>
                 <tbody>
